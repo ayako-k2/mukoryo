@@ -74,6 +74,11 @@
     </div>
     <p class='info-text'>※ 本人情報は正しく入力してください。</p>
   </div>
+
+ <%= button_to "Facebookで登録", user_facebook_omniauth_authorize_path, data: { turbo: false } %>
+<%= button_to "Googleで登録", user_google_oauth2_omniauth_authorize_path, data: { turbo: false } %>
+<%= button_to "Twitterで登録", user_twitter_omniauth_authorize_path, data: { turbo: false } %>
+
   <div class="form-group">
     <h2 class='form-bottom-text'>
       「会員登録」のボタンを押すことにより、
