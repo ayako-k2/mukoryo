@@ -1,4 +1,4 @@
-<%# = render "shared/second-header"%> 
+<%= render "shared/second-header"%>
 
 
 <%= form_with model: @user, url: user_registration_path, class: 'registration-main', local: true do |f| %>
@@ -9,6 +9,10 @@
       会員情報入力
     </h1>
   </div>
+
+<div class= "by-email">
+  <%= f.label :avatar %>
+  <%= f.file_field :avatar, direct_upload: true %> 
 
   <%= render 'shared/error_messages', model: f.object %>
 
@@ -73,11 +77,29 @@
                   "<p> 年 </p>", "<p> 月 </p>") + "<p> 日 </p>" %>
     </div>
     <p class='info-text'>※ 本人情報は正しく入力してください。</p>
+</div>   
+<div class="by-sns">
+  <%# <div class="sns-btn-wrap">
+     <%= button_to "Facebookで登録", user_facebook_omniauth_authorize_path, data: { turbo: false }, class:"sns-btn"  
+  </div>%>
+  <div class="sns-btn-wrap">
+    <div class="sns-icon google">
+    <i class="fa-brands fa-google"></i>
+     </div>
+     <%= button_to "Googleで登録",user_google_oauth2_omniauth_authorize_path,  data: { turbo: false }, class:"sns-btn" %>
+     
   </div>
+  <div class="sns-btn-wrap twitter">
+    <div class="sns-icon twitter">
+    <i class="fa-brands fa-x-twitter"></i>
+    </div>
+     <%= button_to "Xで登録", user_twitter_omniauth_authorize_path, data: { turbo: false }, class:"sns-btn" %>
+  </div>
+  
 
- <%= button_to "Facebookで登録", user_facebook_omniauth_authorize_path, data: { turbo: false } %>
-<%= button_to "Googleで登録", user_google_oauth2_omniauth_authorize_path, data: { turbo: false } %>
-<%= button_to "Twitterで登録", user_twitter_omniauth_authorize_path, data: { turbo: false } %>
+</div>  
+
+<%= button_to "Googleで登録", user_google_oauth2_omniauth_authorize_path, data: { turbo: false } %> 
 
   <div class="form-group">
     <h2 class='form-bottom-text'>
@@ -87,7 +109,7 @@
     </h2>
   </div>
   <div class='register-btn'>
-    <%= f.submit "会員登録" ,class:"register-red-btn" %>
+    <%= f.submit "会員登録" ,class:"register-blue-btn" %>
   </div>
 </div>
 <% end %>
