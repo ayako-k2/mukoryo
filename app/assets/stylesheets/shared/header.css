@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+.top-page-header {
+  width: 100vw;
+  padding: 2vh 15vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-page-left {
+
+}
+
+.logo-icon {
+  width: 25vw;
+  margin-right: 10vw;
+}
+
+
+.lists-right {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+
+.user-nickname {
+  text-decoration: none;
+  margin-right: 3vw;
+  color: #333333;
+  font-weight: bold;
+}
+
+
+.logout {
+  text-decoration: none;
+  color: #1F66BD;
+
+}
+
+.login {
+  text-decoration: none;
+  margin-right: 2vw;
+  padding: 8px 12px ;
+  border: 1px solid #1F66BD;
+  color: #1F66BD;
+  border-radius: 5px;
+}
+
+.sign-up {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #1F66BD;
+  border: 1px solid #1F66BD;
+  padding: 8px 12px ;
+  border-radius: 5px;
+}
+

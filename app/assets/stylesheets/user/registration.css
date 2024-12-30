@@ -138,14 +138,14 @@
 }
 
 .register-btn {
-  width: 50%;
+  width: 25%;
   margin: 0 auto;
 }
 
-.register-red-btn {
+.register-blue-btn {
   width: 100%;
-  background: #ea352d;
-  border: 1px solid #ea352d;
+  background: #1F66BD;
+  border: 1px solid #1F66BD;
   color: #fff;
   line-height: 48px;
   font-size: 14px;
@@ -157,4 +157,61 @@
   color: #0099e8;
   text-align: right;
   cursor: pointer;
+}
+
+.by-sns {
+  width: 50%;
+  margin: 32px auto;
+}
+
+
+.sns-btn {
+  border: none; 
+  background: transparent; 
+  display: inline-flex;       
+  align-items: center;         
+  cursor: pointer;          
+  font-size: 1rem;  
+  color: #000000;   
+  width: 100%;
+  padding: 16px 32px;
+  margin-bottom: 8px;
+}
+
+.sns-btn-wrap.twitter button {
+  border: 1px solid #000;
+  color: #fff;
+}
+
+.sns-btn-wrap {
+border: 1px solid #ccc;
+border-radius: 4px;
+display: flex;
+margin-bottom: 4px;
+}
+
+
+.sns-btn-wrap.twitter{
+  background-color: #000000;
+}
+  
+
+.sns-icon {
+  font-size: 1.5rem;                        
+  display: flex;             
+  align-items: center;          
+  gap: 8px;  
+  margin-left: 20px;                   
+}
+
+.sns-icon.google {
+  color: #1F66BD       
+}
+
+.sns-icon.twitter {
+  color: #ffffff       
+}
+
+.sns-icon i {
+  font-size: 2rem;              
 }

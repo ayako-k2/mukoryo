@@ -1,13 +1,13 @@
 .login-btn {
-  width: 50%;
+  width: 25%;
   margin: 0 auto;
   margin-top: 50px;
 }
 
-.login-red-btn {
+.login-blue-btn {
   width: 100%;
-  background: #ea352d;
-  border: 1px solid #ea352d;
+  background: #295080;
+  border: 1px solid #1f66bd;
   color: #fff;
   line-height: 48px;
   font-size: 14px;
